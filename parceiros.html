@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos parceiros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/parceiros.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<!-- Cabeçalho -->
+<header>
+  <div class="container-grid cabecalho">
+      <a href="index.html"><img class="logo" src="img/logo.svg" alt="Logo da loja Game Mania"></a>
+      <nav id="menu" class="menu">
+          <a href="sobre.html" target="_blank">Sobre</a>
+          <a href="">Produtos</a>
+          <a href="clientes.html" target="_blank">Clientes</a>
+          <a href="parceiros.html" target="_blank">Parceiros</a>
+          <a href="contatos.html" target="_blank">Contatos</a>
+      </nav>
+          <div class="icones-cabecalho">
+              <a id="user-icone" href="#"><img src="img/user-icon.svg" alt="Ícone que direciona para a área do usuário."></a>
+              <a id="compra-icone" href="#"><img src="img/compra-icon.svg" alt="Ícone que direciona para o carrinho de compras."></a>
+              <a id="lupa-icone" href="#"><img src="img/lupa-icon.svg" alt="Ícone que direciona para área de busca de produtos."></a>
+              <!-- <a href="#" onclick="mostrarMenu()"><img class="link-menu-barras"  src="img/barras.png" alt="Íconde de menu de barras"></a> **Ativar quado usar o menu de barras do JS** -->
+              <a href="#" id="barras"><img class="link-menu-barras"  src="img/barras.png" alt="Íconde de menu de barras"></a>
+          </div>
+     </div>
+<!-- Modal Login -->
+  <div id="formulario" class="formulario-container-grid">
+      <div class="campo-formulario">
+          <button class="fechar">X</button>
+          <h3 class="fazer-login">Login</h3>
+          <form>
+              <div class="campo-label">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Ex.: email@email.com">
+              </div>
+              <div class="campo-label">
+                  <label for="senha">Senha</label>
+                  <input type="password" name="password" id="senha" placeholder="Sua senha aqui">
+              </div>
+              <input type="submit" id="botao-enviar" value="Fazer login">
+          </form>
+          <p>Não possui cadastro?<a href=""> Clique aqui </a></p>
+      </div>
+  </header>
+        <!-- Parceiros -->
+  <main>
+    <h2>Conheça alguns de nossos parceiros</h2>    
+    <div class="container-grid-parceiros">
+        <a href="https://www.dell.com/pt-br" target="_blank"><img src="img/dell-logo.png" alt="Logo da empresa Dell"></a>
+        <a href="https://www.nintendo.com/pt_BR/" target="_blank"><img src="img/nintendo-logo.png" alt="Logo da empresa Nintendo"></a>
+        <a href="https://www.samsung.com/br/" target="_blank"><img src="img/samsung-logo.png" alt="Logo da empresa Samsung"></a>
+        <a href="https://www.hp.com/br-pt/shop/" target="_blank"><img class="logo-hp" src="img/HP-Logo.png" alt="Logo da empresa HP"></a>
+    </div>
+</main>
+<!-- Rodapé com bootstrap-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h6>Políticas de uso</h6>
+        <a href="#">Políticas de envio</a>
+        <a href="#">Políticas comerciais</a>
+        <a href="#">Políticas de privacidade</a>
+        <a href="#">Políticas de cancelamento</a>
+      </div>
+      <div class="col">
+        <h6>Institucional</h6>
+        <a href="#">Minha conta</a>
+        <a href="#">Termos de garantia</a>
+        <a href="#">Rastreamento de pedidos</a>
+      </div>
+      <div class="col">
+          <div class="fale-conosco">
+        <h6>Fale conosco</h6>
+        <div class="icones-fale-conosco">
+        <a href="#"><img class="icone-img" src="img/Vector.svg" alt="Ícone de e-mail"></a>
+        <a href="#"><img class="icone-img"  src="img/whatsapp-square-brands 1.svg" alt="Ícone do whatsapp."></a>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+          <div class="redes-sociais">
+        <h6>Redes sociais</h6>
+        <div class="icones-redes-sociais">
+        <a href="#"><img class="icone-img" src="img/facebook-icon.svg" alt="Ícone do facebook"></a>
+        <a href="#"><img class="icone-img" src="img/ícon-instagram.svg" alt="Ícone do instagram"></a>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <h6>Endereço</h6>
+        <div class="endereco-texto">
+        <a href="#"><img class="icone-img" src="img/icone-mapa.svg" alt="Ícone do Mapa"></a>
+        <p>Lorem ipsum dolor, 11  -  CEP: 00000-000  - São Paulo - SP</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-9">
+        <h6>Cadastre-se para receber novidades e promoções</h6>
+        <input id="campo-email" type="email" placeholder="email@mail.com" required>
+        <button id="botao-cadastrar" onclick="cadastrarEmail()">Cadastrar</button>
+      </div>
+    <div class="row">
+      <div class="col-12">
+        <p id="copyright">COPYRIGHT 2021 ° GAME MANIA ° TODOS OS DIREITOS RESERVADOS</p>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+      <script src="js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
